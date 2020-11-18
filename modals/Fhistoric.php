@@ -38,18 +38,33 @@ class Fhistoric
 
     static function updateHistoricByDate(Historic $historic)
     {
+
         $con=Database::getConnection();
-        $req=$con->prepare('UPDATE historic SET level=?,weight=?,dateFull=?,idUser=?,dateEmpty=? WHERE idTrash=? AND DATE(dateFull)=?');
-        $req->execute(array(
-            $historic->getIdTrash(),
-            $historic->getLevel(),
-            $historic->getWeigth(),
-            $historic->getDateFull(),
-            $historic->getIdUser(),
-            $historic->getDateEmpty(),
-            $historic->getId(),
-            date('Y-m-d')
-        ));
+        $req=$con->prepare('SELECT * FROM historic  WHERE idTrash=? ORDER BY _idHisto DESC');
+        $req->execute(array($historic->getIdTrash()));
+        foreach($req->fetchAll() as $data)
+        {
+            $explode=explode(' ',$data['dateFull']);
+            echo var_dump($explode);
+
+            if($explode[0]==date('Y-m-d'))
+            {
+                    $req=$con->prepare('UPDATE historic SET level=?,weight=?,dateFull=?,idUser=?,dateEmpty=? WHERE idTrash=? AND _idHisto=?');
+                    $req->execute(array(
+                      
+                        $historic->getLevel(),
+                        $historic->getWeigth(),
+                        $historic->getDateFull(),
+                        $historic->getIdUser(),
+                        $historic->getDateEmpty(),
+                        $historic->getIdTrash(),
+                        $data['_idHisto']
+                    ));
+                    exit();
+                echo $explode[0];
+            }
+        }
+        
     }
 
     static function getOneHistoricOfTrash($idTrash)
@@ -72,7 +87,7 @@ class Fhistoric
         $con=Database::getConnection();
 
         $req=$con->prepare('SELECT * FROM historic WHERE idTrash=? AND DATE(dateFull)=?');
-        $req->execute($idTras,date('Y-m-d'));
+        $req->execute(array($idTras,date('Y-m-d')));
         if($req->rowCount()>0)
         {
             return true;

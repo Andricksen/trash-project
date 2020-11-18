@@ -5,7 +5,7 @@ if(isset($_GET['idTrash'],$_GET['level'],$_GET['weight']) && !empty($_GET['idTra
 {
     $historic=new Historic(null,$_GET['idTrash'],$_GET['level'],$_GET['weight'],null,null,null);
 
-
+    $historic->setDateFull(date('Y-m-d H:m:s'));
     if(Fhistoric::checkIfHistoricTrashIsSave($_GET['idTrash']))
     {
         if($_GET['level']>90)
