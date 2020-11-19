@@ -67,6 +67,32 @@ class Fhistoric
         
     }
 
+    static function updateDateEmptyAndUser($idTrash,$idUser)
+    {
+
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT * FROM historic  WHERE idTrash=? ORDER BY _idHisto DESC');
+        $req->execute(array($idTrash));
+        foreach($req->fetchAll() as $data)
+        {
+            $explode=explode(' ',$data['dateFull']);
+            //echo var_dump($explode);
+
+            if($explode[0]==date('Y-m-d'))
+            {
+                $req=$con->prepare('UPDATE historic SET idUser=?,dateEmpty=? WHERE idTrash=? AND _idHisto=?');
+                $req->execute(array(
+                    $idUser,
+                    date('Y-m-d H:m:s'),
+                    $idTrash,
+                    $data['_idHisto']
+                ));
+                exit();
+                echo $explode[0];
+            }
+        }
+
+    }
     static function getOneHistoricOfTrash($idTrash)
     {
         $con=Database::getConnection();
