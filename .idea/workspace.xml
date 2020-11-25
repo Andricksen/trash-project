@@ -20,11 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99107feb-7a76-4064-a8f8-3401b0ad7583" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/newScan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addNewPartner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addNewTrash.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addNewUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/listPartner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/listTrash.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/listUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maps.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rapport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/tableau.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/newAdmin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/newHistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newHistoric.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modals/Fhistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fhistoric.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +51,21 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kN24vfHHFTXoZ2G17BRZ3TmxKc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,10 +74,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/controllers" />
     </key>
   </component>
@@ -68,6 +96,8 @@
       <workItem from="1605601684897" duration="6614000" />
       <workItem from="1605613893737" duration="4917000" />
       <workItem from="1605769585578" duration="1089000" />
+      <workItem from="1606203754131" duration="6691000" />
+      <workItem from="1606221682259" duration="3375000" />
     </task>
     <servers />
   </component>
@@ -84,6 +114,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="491" y="90" width="417" height="558" key="#com.intellij.ide.util.MemberChooser" timestamp="1605605981270">
@@ -98,9 +129,9 @@
       <screen x="0" y="0" width="1366" height="743" />
     </state>
     <state x="466" y="95" width="426" height="549" key="NewPhpClassDialog/0.0.1366.743@0.0.1366.743" timestamp="1605530802212" />
-    <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog" timestamp="1605608366040">
+    <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog" timestamp="1606204250187">
       <screen x="0" y="0" width="1366" height="743" />
     </state>
-    <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog/0.0.1366.743@0.0.1366.743" timestamp="1605608366040" />
+    <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog/0.0.1366.743@0.0.1366.743" timestamp="1606204250186" />
   </component>
 </project>

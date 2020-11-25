@@ -85,7 +85,7 @@ class Fhistoric
                     $idUser,
                     date('Y-m-d H:m:s'),
                     $idTrash,
-                    $data['_idHisto']
+                    $data[' les ']
                 ));
                 exit();
                 echo $explode[0];
