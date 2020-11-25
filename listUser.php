@@ -139,94 +139,46 @@
 </head>
 <body>
 <?php include_once 'commons/menu.php';?>
+<?php include_once 'modals/Fuser.php';
+
+
+
+$users=Fuser::getAllUsers();
+
+;?>
 
 <div class="main">
-    <h2>Collection Trash</h2>
+    <h2>User List</h2>
     <div class="table-wrapper">
         <table class="fl-table">
             <thead>
             <tr>
                 <th>#</th>
-                <th>ID Trash</th>
-                <th>Level</th>
-                <th>Weigth</th>
+                <th>Firstname</th>
+                <th>LastName</th>
+                <th>Code</th>
                 <th>Address</th>
-                <th>Date Full</th>
-                <th>DateEmpty</th>
-                <th>User</th>
+                <th>Phone</th>
+                <th>Area</th>
+                <th>Date created</th>
+                <th>Partner</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-            </tr>
-            <tr>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-            </tr>
-            <tr>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-            </tr>
-            <tr>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-            </tr>
-            <tr>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-            </tr>
-            <tr>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-            </tr>
-            <tr>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-            </tr>
-            <tr>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-            </tr>
-            <tr>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-            </tr>
-            <tr>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-            </tr>
+            <?php foreach ($users as $k => $user):?>
+                <tr>
+                    <td><?=$k+1;?></td>
+                    <td><?=$user['firstname'];?></td>
+                    <td><?=$user['lastname'];?></td>
+                    <td><?=$user['code'];?></td>
+                    <td><?=$user['address'];?></td>
+                    <td><?=$user['phone'];?></td>
+                    <td><?=$user['area'];?></td>
+                    <td><?=$user['date_created'];?></td>
+                    <td>--</td>
+
+                </tr>
+            <?php endforeach;?>
             <tbody>
         </table>
     </div>

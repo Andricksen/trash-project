@@ -112,8 +112,16 @@ class Fhistoric
     static function getAllHistoricCollectionDay()
     {
         $con=Database::getConnection();
-        $req=$con->prepare('SELECT * FROM historic c,trash t,users u WHERE c.idTrash=t.codeTrash AND u.code=c.idUser AND DATE(c.dateHisto)=?');
-        $req->execute(array('Y-m-d'));
+        $req=$con->prepare('SELECT * FROM historic c,trash t,users u WHERE c.idTrash=t.codeTrash AND u.code=c.idUser AND DATE(dateHisto)=?');
+        $req->execute(array(date('Y-m-d')));
+        return $req->fetchAll();
+    }
+
+    static function getAllHistoricCollection()
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT * FROM historic c,trash t,users u WHERE c.idTrash=t.codeTrash AND u.code=c.idUser');
+        $req->execute(array());
         return $req->fetchAll();
     }
 

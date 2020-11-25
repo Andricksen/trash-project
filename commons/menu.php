@@ -6,9 +6,9 @@
     <a href="rapport.php">Raport</a>
     <a href="addNewTrash.php">Add new Trash</a>
     <a href="addNewUser.php">Add new Users</a>
-    <a href="addNewPartner.php">Add new Partner</a>
+    <a href="addNewPartner.php">Add new Contractor</a>
     <a href="listTrash.php">List Trash</a>
     <a href="listUser.php">List Users</a>
-    <a href="listPartner.php">List Partner</a>
+    <a href="listPartner.php">List Contractor</a>
 </div>
 <?php

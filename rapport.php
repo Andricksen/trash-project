@@ -139,9 +139,15 @@
 </head>
 <body>
 <?php include_once 'commons/menu.php';?>
+<?php include_once 'modals/Fhistoric.php';
+
+
+$historic=Fhistoric::getAllHistoricCollection();
+
+;?>
 
 <div class="main">
-    <h2>Rapport Collection</h2>
+    <h2>Report Trash</h2>
     <div class="table-wrapper">
         <table class="fl-table">
             <thead>
@@ -157,76 +163,20 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-            </tr>
-            <tr>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-            </tr>
-            <tr>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-            </tr>
-            <tr>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-            </tr>
-            <tr>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-            </tr>
-            <tr>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-            </tr>
-            <tr>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-            </tr>
-            <tr>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-            </tr>
-            <tr>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-            </tr>
-            <tr>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-            </tr>
+            <?php foreach($historic as $k => $data):?>
+                <tr>
+                    <td><?=$k+1;?></td>
+                    <td><?=$data['codeTrash'];?></td>
+                    <td><?=$data['level'];?></td>
+                    <td><?=$data['weight'];?></td>
+                    <td><?=$data['address'];?></td>
+                    <td><?=$data['dateFull'];?></td>
+                    <td><?=$data['dateEmpty'];?></td>
+                    <td><?=$data['firstname'].' '.$data['lastname'];?></td>
+                    <td>-</td>
+
+                </tr>
+            <?php endforeach;?>
             <tbody>
         </table>
     </div>

@@ -21,10 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="99107feb-7a76-4064-a8f8-3401b0ad7583" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alert.php" beforeDir="false" afterPath="$PROJECT_DIR$/alert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/commons/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/listPartner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listTrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/listTrash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/listUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modals/Fhistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fhistoric.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitoring.php" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapport.php" beforeDir="false" afterPath="$PROJECT_DIR$/rapport.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +84,7 @@
       <workItem from="1605769585578" duration="1089000" />
       <workItem from="1606203754131" duration="6691000" />
       <workItem from="1606221682259" duration="3375000" />
-      <workItem from="1606293804978" duration="2703000" />
+      <workItem from="1606293804978" duration="7441000" />
     </task>
     <servers />
   </component>

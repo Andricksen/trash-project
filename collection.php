@@ -171,8 +171,8 @@ $historic=Fhistoric::getAllHistoricCollectionDay();
                     <td><?=$data['weight'];?></td>
                     <td><?=$data['address'];?></td>
                     <td><?=$data['dateFull'];?></td>
-                    <td><?=$data['dateHisto'];?></td>
-                    <td><?=$data['dateHisto'];?></td>
+                    <td><?=$data['dateEmpty'];?></td>
+                    <td><?=$data['firstname'].' '.$data['lastname'];?></td>
                     <td>-</td>
 
                 </tr>

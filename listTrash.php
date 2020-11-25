@@ -139,94 +139,43 @@
 </head>
 <body>
 <?php include_once 'commons/menu.php';?>
+<?php include_once 'modals/Ftrash.php';
+
+
+
+$trahs=Ftrash::getAllTrash();
+?>
 
 <div class="main">
-    <h2>Collection Trash</h2>
+    <h2>Trash List</h2>
     <div class="table-wrapper">
         <table class="fl-table">
             <thead>
             <tr>
                 <th>#</th>
                 <th>ID Trash</th>
-                <th>Level</th>
-                <th>Weigth</th>
+                <th>long</th>
+                <th>lat</th>
                 <th>Address</th>
-                <th>Date Full</th>
-                <th>DateEmpty</th>
-                <th>User</th>
+                <th>Type</th>
+                <th>Date add</th>
+
             </tr>
             </thead>
             <tbody>
+
+         <?php foreach($trahs as $k => $trah):?>
             <tr>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
-                <td>Content 1</td>
+                <td><?=$k+1;?></td>
+                <td><?=$trah['codeTrash'];?></td>
+                <td><?=$trah['long'];?></td>
+                <td><?=$trah['lat'];?></td>
+                <td><?=$trah['address'];?></td>
+                <td><?=$trah['type'];?></td>
+                <td><?=$trah['dateTrash'];?></td>
+
             </tr>
-            <tr>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-                <td>Content 2</td>
-            </tr>
-            <tr>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-                <td>Content 3</td>
-            </tr>
-            <tr>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-                <td>Content 4</td>
-            </tr>
-            <tr>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-                <td>Content 5</td>
-            </tr>
-            <tr>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-                <td>Content 6</td>
-            </tr>
-            <tr>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-                <td>Content 7</td>
-            </tr>
-            <tr>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-                <td>Content 8</td>
-            </tr>
-            <tr>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-                <td>Content 9</td>
-            </tr>
-            <tr>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-                <td>Content 10</td>
-            </tr>
+        <?php endforeach;?>
             <tbody>
         </table>
     </div>
