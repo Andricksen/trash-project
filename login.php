@@ -11,19 +11,24 @@
 <body>
 
 <div class="main">
-    <div class="bg-img">
-        <form action="/action_page.php" class="container">
-            <h1>Login</h1>
+    <form action="login.php" method="post">
+        <div class="imgcontainer">
+            <h2>Login</h2>
+        </div>
 
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+        <div class="container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit" class="btn">Login</button>
-        </form>
-    </div>
+            <button type="submit">Login</button>
+
+        </div>
+
+
+    </form>
 </div>
 </body>
 </html>

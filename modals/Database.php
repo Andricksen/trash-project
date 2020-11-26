@@ -10,10 +10,10 @@ class Database
         $password = "root";
         try
         {
-            $conn = new PDO("mysql:host=$servername;dbname=poubelles", $username, $password);
+            $conn = new PDO("mysql:host=$servername;dbname=trashProject", $username, $password);
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+            $conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, true);
 
         } catch(PDOException $e) {
             echo "Connection failed: " . var_dump($e->getMessage());
