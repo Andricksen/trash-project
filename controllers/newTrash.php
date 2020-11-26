@@ -11,7 +11,8 @@ if(isset($_POST['long'],$_POST['lat'],$_POST['address'],$_POST['codeTras'])
     include_once '../modals/Ftrash.php';
 
     $trash=new Trash(null,$_POST['long'],$_POST['lat'],$_POST['address'],$_POST['codeTras'],$_POST['type'],null);
-    $res=Ftrash::addNewTrash($trash);
+
+    $res=Ftrash::addTrash($trash);
     if(is_numeric($res))
     {
         $_SESSION['done']="Trash add successfuly";

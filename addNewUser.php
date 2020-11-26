@@ -46,7 +46,7 @@
                 $contractors=Fpartner::getAllPartner();
 
             ;?>
-            <select  class="custom-select" name="idPart" required>
+            <select  class="custom-select" name="idPart">
                 <option value="">Contractor</option>
                 <?php foreach($contractors as $contractor):?>
                       <option value="<?=$contractor['_idPart'];?>"><?=$contractor['namePart'];?></option>

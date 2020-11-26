@@ -8,7 +8,7 @@ class Fpartner
     static function addNewPartner(Partner  $partner)
     {
         $con=Database::getConnection();
-        $req=$con->prepare('INSERT INTO partners SET namePart=?,town=?,address=?,phone=?');
+        $req=$con->prepare('INSERT INTO partners SET namePart=?,area=?,address=?,phone=?');
         $req->execute(array(
             $partner->getNamePart(),
             $partner->getTown(),

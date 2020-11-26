@@ -34,7 +34,7 @@
             <input type="text" placeholder="Enter Address" name="address" required>
 
             <label for="psw"><b>Phone</b></label>
-            <input type="text" placeholder="Enter Phone" name="Phone" required>
+            <input type="text" placeholder="Enter Phone" name="phone" required>
 
 
 

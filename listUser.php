@@ -157,7 +157,7 @@ $users=Fuser::getAllUsers();
                 <th>Firstname</th>
                 <th>LastName</th>
                 <th>Code</th>
-                <th>Address</th>
+
                 <th>Phone</th>
                 <th>Area</th>
                 <th>Date created</th>
@@ -171,7 +171,7 @@ $users=Fuser::getAllUsers();
                     <td><?=$user['firstname'];?></td>
                     <td><?=$user['lastname'];?></td>
                     <td><?=$user['code'];?></td>
-                    <td><?=$user['address'];?></td>
+
                     <td><?=$user['phone'];?></td>
                     <td><?=$user['area'];?></td>
                     <td><?=$user['date_created'];?></td>

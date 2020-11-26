@@ -1,7 +1,7 @@
 <?php
-
-include_once 'Trash.php';
 include_once 'Database.php';
+include_once 'Trash.php';
+
 class Ftrash
 {
 
@@ -9,7 +9,15 @@ class Ftrash
     static function addNewTrash(Trash $trash)
     {
         $con = Database::getConnection();
-        $req = $con->prepare('INSERT INTO trash SET long=?,lat=?,address=?,codeTrash=?,typeTrash=?');
+        $req = $con->prepare('INSERT INTO trash (long,lat,address,codeTrash,typeTrash) VALUES(?,?,?,?,?)');
+        $req->execute(array($trash->getLong(),$trash->getLat(), $trash->getAddress(),$trash->getCodeTrash(),$trash->getTypeTrash()));
+        return $con->lastInsertId();
+    }
+
+    static function addTrash(Trash $trash)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('INSERT INTO trash SET long=?,lat=?,address=?,codeTrash=?,typeTrash=?');
         $req->execute(array(
             $trash->getLong(),
             $trash->getLat(),
