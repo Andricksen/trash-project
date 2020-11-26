@@ -15,7 +15,14 @@
         <div class="imgcontainer">
             <h2>Add new User</h2>
         </div>
-
+        <center>
+            <?php if(isset($_SESSION['err'])):?>
+                <?=$_SESSION['err'];?>
+                <?php unset($_SESSION['err']); endif;?>
+            <?php if(isset($_SESSION['done'])):?>
+                <?=$_SESSION['done'];?>
+                <?php unset($_SESSION['done']); endif;?>
+        </center>
         <div class="container">
             <label for="username"><b>FirstName</b></label>
             <input type="text" placeholder="Enter FirstName" name="firstname" required>

@@ -6,7 +6,7 @@ if(!isset($_SESSION))
 }
 
 
-if(isset($_POST['username'],$_SESSION['password'],$_POST['role'],$_POST['idPart'])
+if(isset($_POST['username'],$_POST['password'],$_POST['role'],$_POST['idPart'])
     && !empty($_POST['username'])&& !empty($_POST['password']))
 {
     include_once '../modals/Admin.php';
