@@ -7,7 +7,7 @@ if(!isset($_SESSION))
 
 
 if(isset($_POST['username'],$_SESSION['password'],$_POST['role'],$_POST['idPart'])
-    && !empty($_POST['username'])&& !empty($_POST['password'])&& !empty($_POST['role'])&& !empty($_POST['idPart']))
+    && !empty($_POST['username'])&& !empty($_POST['password']))
 {
     include_once '../modals/Admin.php';
     include_once '../modals/Fadmin.php';
@@ -18,15 +18,15 @@ if(isset($_POST['username'],$_SESSION['password'],$_POST['role'],$_POST['idPart'
     if(is_numeric($res))
     {
         $_SESSION['done']="new Admin add successfully";
-        header('Location: ../addNewUser.php');
+        header('Location: ../addNewAdmin.php');
     }else
     {
-        $_SESSION['err']="somthing wrong";
-        header('Location: ../addNewUser.php');
+        $_SESSION['err']="somthing ?";
+        header('Location: ../addNewAdmin.php');
     }
 
 }else
 {
     $_SESSION['err']="somthing wrong";
-    header('Location: ../addNewUser.php');
+    header('Location: ../addNewAdmin.php');
 }
