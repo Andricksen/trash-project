@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99107feb-7a76-4064-a8f8-3401b0ad7583" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/getMaps.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/lis.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/collection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/newHistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newHistoric.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/newTrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newTrash.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/listPartner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listTrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/listTrash.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/listUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps.php" beforeDir="false" afterPath="$PROJECT_DIR$/maps.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Fhistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fhistoric.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Ftrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Ftrash.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Fuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fuser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitoring.php" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapport.php" beforeDir="false" afterPath="$PROJECT_DIR$/rapport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +80,7 @@
       <workItem from="1606221682259" duration="3375000" />
       <workItem from="1606293804978" duration="8237000" />
       <workItem from="1606372983661" duration="12526000" />
-      <workItem from="1606389398647" duration="9565000" />
+      <workItem from="1606389398647" duration="10527000" />
     </task>
     <servers />
   </component>

@@ -20,7 +20,7 @@ if(isset($_POST['username'],$_POST['password']) && !empty($_POST['username']) &&
         $_SESSION['role']=$data['role'];
         $_SESSION['idPart']=$data['idPart'];
 
-        header('Location: ../dashboard.php');
+        header('Location: ../maps.php');
     }
 }else
 {
