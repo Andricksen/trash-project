@@ -20,16 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99107feb-7a76-4064-a8f8-3401b0ad7583" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/getMaps.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/lis.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addNewPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/addNewPartner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/addNewUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/collection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/newHistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newHistoric.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/newTrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newTrash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/listPartner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listTrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/listTrash.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/listUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Fpartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fpartner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps.php" beforeDir="false" afterPath="$PROJECT_DIR$/maps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modals/Fhistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fhistoric.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modals/Ftrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Ftrash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modals/Fuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring.php" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapport.php" beforeDir="false" afterPath="$PROJECT_DIR$/rapport.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +93,7 @@
       <workItem from="1606221682259" duration="3375000" />
       <workItem from="1606293804978" duration="8237000" />
       <workItem from="1606372983661" duration="12526000" />
-      <workItem from="1606389398647" duration="3241000" />
+      <workItem from="1606389398647" duration="9565000" />
     </task>
     <servers />
   </component>
@@ -124,9 +129,14 @@
       <screen x="0" y="0" width="1366" height="743" />
     </state>
     <state x="466" y="95" width="426" height="549" key="NewPhpClassDialog/0.0.1366.743@0.0.1366.743" timestamp="1605530802212" />
-    <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog" timestamp="1606383784807">
-      <screen x="0" y="0" width="1366" height="743" />
+    <state x="503" y="291" width="351" height="152" key="NewPhpFileDialog" timestamp="1606398241350">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="503" y="291" width="351" height="152" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606398241350" />
     <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog/0.0.1366.743@0.0.1366.743" timestamp="1606383784807" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1606398221972">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1606398221972" />
   </component>
 </project>

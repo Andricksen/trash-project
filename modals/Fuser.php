@@ -53,6 +53,21 @@ class Fuser
 
     }
 
+    static function getIdPart($idUser)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT idPart FROM users WHERE _idUser=? OR code=?');
+        $req->execute(array($idUser,$idUser));
+        return $req->fetch()['idPart'];
+    }
+
+    static function checkIfIsContractorUser($idUser)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT namePart FROM partners WHERE _idPart=?');
+        $req->execute(array($idUser));
+        return $req->fetch()['namePart'];
+    }
     static function getAllUsers()
     {
         $con=Database::getConnection();

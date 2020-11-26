@@ -1,10 +1,24 @@
 <?php
 include_once 'Historic.php';
+include_once 'Trash.php';
 include_once 'Database.php';
 
 class Fhistoric
 {
 
+    static function addTrash(Trash $trash)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('INSERT INTO trash SET longi=?,lat=?,address=?,codeTrash=?,typeTrash=?');
+        $req->execute(array(
+            $trash->getLong(),
+            $trash->getLat(),
+            $trash->getAddress(),
+            $trash->getCodeTrash(),
+            $trash->getTypeTrash()
+        ));
+        return $con->lastInsertId();
+    }
     static function addNewHistoric(Historic  $historic)
     {
         $con=Database::getConnection();
@@ -96,8 +110,8 @@ class Fhistoric
     static function getOneHistoricOfTrash($idTrash)
     {
         $con=Database::getConnection();
-        $req=$con->prepare('SELECT * FROM historic WHERE idTrash=?');
-        $req->execute(array($idTrash));
+        $req=$con->prepare('SELECT * FROM historic WHERE idTrash=? AND DATE(dateHisto)=?');
+        $req->execute(array($idTrash,date('Y-m-d')));
         return $req->fetch();
     }
 
