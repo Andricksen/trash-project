@@ -11,29 +11,24 @@
 </head>
 <body>
 <?php include_once 'commons/menu.php';?>
-<?php include_once 'modals/Fuser.php';
+<?php include_once 'modals/Fadmin.php';
 
 
 
-$users=Fuser::getAllUsers();
+$users=Fadmin::getAllAdmin();
 
 ;?>
 
 <div class="main">
-    <h2>User List</h2>
+    <h2>Admin List</h2>
     <div class="table-wrapper">
         <table class="fl-table">
             <thead>
             <tr>
                 <th>#</th>
-                <th>Firstname</th>
-                <th>LastName</th>
-                <th>Code</th>
-
-                <th>Phone</th>
-                <th>Area</th>
+                <th>Username</th>
+                <th>Role</th>
                 <th>Date created</th>
-                <th>Partner</th>
                 <th>Action</th>
             </tr>
             </thead>
@@ -41,15 +36,10 @@ $users=Fuser::getAllUsers();
             <?php foreach ($users as $k => $user):?>
                 <tr>
                     <td><?=$k+1;?></td>
-                    <td><?=$user['firstname'];?></td>
-                    <td><?=$user['lastname'];?></td>
-                    <td><?=$user['code'];?></td>
-
-                    <td><?=$user['phone'];?></td>
-                    <td><?=$user['area'];?></td>
+                    <td><?=$user['username'];?></td>
+                    <td><?=$user['role'];?></td>
                     <td><?=$user['date_created'];?></td>
-                    <td><?=$user['idPart']==null?'User':Fuser::checkIfIsContractorUser($user['idPart']);?></td>
-                    <td><a href="alterUser.php?idUser=<?=$user['_idUser'];?>">Alter</a>||<a href="controllers/deleteUser.php?idUser=<?=$user['_idUser'];?>">Delete</a></td>
+                    <td><a href="alterAdmin.php?idAdmin=<?=$user['_idAdmin'];?>">Alter</a>||<a href="controllers/deleteAdmin.php?idAdmin=<?=$user['_idAdmin'];?>">Delete</a></td>
 
                 </tr>
             <?php endforeach;?>

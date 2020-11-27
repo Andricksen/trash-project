@@ -18,6 +18,7 @@ if(!isset($_SESSION))
     <a href="listTrash.php">List Trash</a>
     <a href="listUser.php">List Users</a>
     <a href="listPartner.php">List Contractor</a>
+    <a href="listAdmin.php">List Admin</a>
     <a href="controllers/exit.php">Logout</a>
 </div>
 <?php

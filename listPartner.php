@@ -29,6 +29,7 @@ $contractors=Fpartner::getAllPartner();
                 <th>Phone</th>
                 <th>Area</th>
                 <th>Date Add</th>
+                <th>Action</th>
 
             </tr>
             </thead>
@@ -41,6 +42,7 @@ $contractors=Fpartner::getAllPartner();
                     <td><?=$data['phone'];?></td>
                     <td><?=$data['area'];?></td>
                     <td><?=$data['date_add'];?></td>
+                    <td><a href="alterContractor.php?idPart=<?=$data['_idPart'];?>">Alter</a>||<a href="controllers/deleteContractor.php?idPart=<?=$data['_idPart'];?>">Delete</a></td>
 
                 </tr>
             <?php endforeach;?>

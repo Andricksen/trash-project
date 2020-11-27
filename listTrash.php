@@ -30,6 +30,7 @@ $trahs=Ftrash::getAllTrash();
                 <th>Address</th>
                 <th>Type</th>
                 <th>Date add</th>
+                <th>Action</th>
 
             </tr>
             </thead>
@@ -44,6 +45,7 @@ $trahs=Ftrash::getAllTrash();
                 <td><?=$trah['address'];?></td>
                 <td><?=$trah['typeTrash'];?></td>
                 <td><?=$trah['dateTrash'];?></td>
+                <td><a href="alterTrash.php?idTrash=<?=$trah['_idTrash'];?>">Alter</a>||<a href="controllers/deleteTrash.php?idTrash=<?=$trah['_idTrash'];?>">Delete</a></td>
 
             </tr>
         <?php endforeach;?>

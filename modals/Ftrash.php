@@ -66,6 +66,12 @@ class Ftrash
         return $req->fetchAll();
     }
 
-
+    static function getTrashById($idTrash)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT * FROM trash WHERE _idTrash=?');
+        $req->execute(array($idTrash));
+        return $req->fetch();
+    }
 
 }
