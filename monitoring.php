@@ -32,22 +32,35 @@
                 <th>Last update</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="moni">
             <?php foreach ($historic as $k => $data):?>
-                <tr>
-                    <td><?=$k+1;?></td>
-                    <td><?=$data['codeTrash'];?></td>
-                    <td><?=$data['level'];?></td>
-                    <td><?=$data['weight'];?></td>
-                    <td><?=$data['address'];?></td>
-                    <td><?=$data['dateFull']==null?'Not full':'Full';?></td>
-                    <td><?=$data['dateHisto'];?></td>
 
-                </tr>
             <?php endforeach;?>
             <tbody>
         </table>
     </div>
 </div>
 </body>
+
+<script>
+
+    setInterval(function(){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log((this.responseText));
+
+                var div=document.getElementById('moni');
+                div.innerHTML=(this.responseText)
+            }
+
+        };
+        xmlhttp.open('GET', 'http://127.0.0.1/trash-project/controllers/getMonitoring.php');
+        xmlhttp.send();
+    }, 2000);//run this thang every 2 seconds
+
+
+
+
+</script>
 </html>

@@ -139,7 +139,17 @@ class Fhistoric
         return $req->fetchAll();
     }
 
-
+    static function checkCodeTrash($code)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT * FROM trash WHERE codeTrash=?');
+        $req->execute(array($code));
+        if($req->rowCount()==0)
+        {
+            return true;
+        }
+        return false;
+    }
     static function getAllHistoricDay()
     {
         $con=Database::getConnection();

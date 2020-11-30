@@ -53,6 +53,19 @@ class Fuser
 
     }
 
+    static function checkCodeUser($code)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT * FROM users WHERE code=?');
+        $req->execute(array($code));
+
+        if($req->rowCount()==0)
+        {
+            return true;
+        }
+        return false;
+    }
+
     static function getIdPart($idUser)
     {
         $con=Database::getConnection();

@@ -20,26 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99107feb-7a76-4064-a8f8-3401b0ad7583" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/alterAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alterContractor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alterTrash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alterUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/alterAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/alterContractor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/alterTrash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/alterUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/deleteAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/deleteContractor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/deleteTrash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/deleteUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/listAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getMonitoring.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/addNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/collection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commons/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/commons/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/listPartner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listTrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/listTrash.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/listUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modals/Ftrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Ftrash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/newAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/newContractor.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newContractor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/newTrash.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newTrash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/newUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/newUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modals/Fadmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fadmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modals/Fhistoric.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fhistoric.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modals/Fuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/modals/Fuser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring.php" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +92,9 @@
       <workItem from="1606293804978" duration="8237000" />
       <workItem from="1606372983661" duration="12526000" />
       <workItem from="1606389398647" duration="10527000" />
-      <workItem from="1606458576222" duration="7938000" />
+      <workItem from="1606458576222" duration="9281000" />
+      <workItem from="1606550235831" duration="1046000" />
+      <workItem from="1606719155972" duration="4521000" />
     </task>
     <servers />
   </component>
@@ -135,11 +130,11 @@
       <screen x="0" y="0" width="1366" height="743" />
     </state>
     <state x="466" y="95" width="426" height="549" key="NewPhpClassDialog/0.0.1366.743@0.0.1366.743" timestamp="1605530802212" />
-    <state x="503" y="297" width="351" height="152" key="NewPhpFileDialog" timestamp="1606461278670">
+    <state x="503" y="297" width="351" height="152" key="NewPhpFileDialog" timestamp="1606721903679">
       <screen x="0" y="0" width="1366" height="743" />
     </state>
     <state x="503" y="291" width="351" height="152" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606398241350" />
-    <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog/0.0.1366.743@0.0.1366.743" timestamp="1606461278670" />
+    <state x="503" y="297" width="351" height="144" key="NewPhpFileDialog/0.0.1366.743@0.0.1366.743" timestamp="1606721903679" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1606398221972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

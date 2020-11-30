@@ -46,12 +46,16 @@
                 $contractors=Fpartner::getAllPartner();
 
             ;?>
+            <?php if($_SESSION['role']=='admin'):?>
             <select  class="custom-select" name="idPart">
                 <option value="">Contractor</option>
                 <?php foreach($contractors as $contractor):?>
                       <option value="<?=$contractor['_idPart'];?>"><?=$contractor['namePart'];?></option>
                 <?php endforeach;?>
             </select>
+            <?php else:?>
+                <input type="hidden" value="<?=$_SESSION['idPart'];?>" name="idPart">
+            <?php endif;?>
 
             <button type="submit">Save User</button>
 

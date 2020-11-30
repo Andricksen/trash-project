@@ -13,17 +13,23 @@ if(isset($_POST['username'],$_POST['password'],$_POST['role'],$_POST['idPart'])
     include_once '../modals/Fadmin.php';
 
     $admin=new Admin(null,$_POST['username'],$_POST['role'],$_POST['password'],$_POST['idPart']);
-
-    $res=Fadmin::addNewAdmin($admin);
-    if(is_numeric($res))
+    if(Fadmin::checkUsername($_POST['username']))
     {
-        $_SESSION['done']="new Admin add successfully";
-        header('Location: ../addNewAdmin.php');
-    }else
-    {
-        $_SESSION['err']="somthing ?";
+        $res=Fadmin::addNewAdmin($admin);
+        if(is_numeric($res))
+        {
+            $_SESSION['done']="new Admin add successfully";
+            header('Location: ../addNewAdmin.php');
+        }else
+        {
+            $_SESSION['err']="somthing ?";
+            header('Location: ../addNewAdmin.php');
+        }
+    }else{
+        $_SESSION['err']="Usernme already exist";
         header('Location: ../addNewAdmin.php');
     }
+
 
 }else
 {

@@ -18,6 +18,18 @@ class Fadmin
         return $con->lastInsertId();
     }
 
+    static function checkUsername($username)
+    {
+        $con=Database::getConnection();
+        $req=$con->prepare('SELECT * FROM admin WHERE username=?');
+        $req->execute(array($username));
+        if($req->rowCount()==0)
+        {
+            return true;
+        }
+        return false;
+    }
+
     static function getAllAdmin()
     {
         $con=Database::getConnection();
